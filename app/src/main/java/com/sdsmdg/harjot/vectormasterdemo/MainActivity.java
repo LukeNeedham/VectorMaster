@@ -2,13 +2,11 @@ package com.sdsmdg.harjot.vectormasterdemo;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 import com.sdsmdg.harjot.vectormaster.VectorMasterView;
-import com.sdsmdg.harjot.vectormaster.models.ClipPathModel;
 import com.sdsmdg.harjot.vectormaster.models.GroupModel;
 import com.sdsmdg.harjot.vectormaster.models.PathModel;
 
