@@ -406,6 +406,11 @@ public class VectorMasterDrawable extends Drawable {
         return pModel;
     }
 
+    @NonNull
+    public List<PathModel> getAllPathModels() {
+        return vectorModel.getPathModels();
+    }
+
     public ClipPathModel getClipPathModelByName(String name) {
         ClipPathModel cModel = null;
         for (ClipPathModel clipPathModel : vectorModel.getClipPathModels()) {
@@ -419,6 +424,11 @@ public class VectorMasterDrawable extends Drawable {
                 return cModel;
         }
         return cModel;
+    }
+
+    @NonNull
+    public List<ClipPathModel> getAllClipPathModels() {
+        return vectorModel.getClipPathModels();
     }
 
     public void update() {
