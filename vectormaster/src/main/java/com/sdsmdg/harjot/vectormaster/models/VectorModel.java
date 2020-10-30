@@ -6,6 +6,8 @@ import android.graphics.Matrix;
 import android.graphics.Path;
 import android.graphics.Region;
 
+import androidx.annotation.NonNull;
+
 import com.sdsmdg.harjot.vectormaster.enums.TintMode;
 
 import java.util.ArrayList;

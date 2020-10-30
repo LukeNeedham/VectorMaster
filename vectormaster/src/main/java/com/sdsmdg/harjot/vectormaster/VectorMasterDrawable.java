@@ -11,6 +11,8 @@ import android.graphics.PixelFormat;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 
+import androidx.annotation.NonNull;
+
 import com.sdsmdg.harjot.vectormaster.models.ClipPathModel;
 import com.sdsmdg.harjot.vectormaster.models.GroupModel;
 import com.sdsmdg.harjot.vectormaster.models.PathModel;
@@ -21,6 +23,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Stack;
 
 public class VectorMasterDrawable extends Drawable {
@@ -381,6 +384,11 @@ public class VectorMasterDrawable extends Drawable {
             }
         }
         return null;
+    }
+
+    @NonNull
+    public List<GroupModel> getAllGroupModels() {
+        return vectorModel.getGroupModels();
     }
 
     public PathModel getPathModelByName(String name) {
